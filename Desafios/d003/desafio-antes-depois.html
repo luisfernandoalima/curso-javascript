@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style>
+        input {
+            font-size: 1.2em;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Antes e depois</h1>
+    <input type="button" value="Antecessor e Sucessor" id="btn">
+    <script>
+        var btn = document.querySelector('#btn')
+        btn.addEventListener('click', numero)
+
+        function numero() {
+            var numint = Number.parseInt(window.prompt('Digite um número inteiro qualquer'))
+
+            window.alert(`Antes de ${numint}, temos o número ${numint-1}.
+Depois de ${numint}, temos o número ${numint+1}.`)
+        }
+    </script>
+</body>
+
+</html>

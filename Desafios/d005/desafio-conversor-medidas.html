@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+</head>
+
+<body>
+    <h1>Conversor de Medidas</h1>
+    <input type="button" value="Converter" id="btn">
+    <h2></h2>
+    <section></section>
+    <script>
+        var btn = document.querySelector('#btn')
+
+        btn.addEventListener('click', converter)
+
+        function converter() {
+            var res = document.getElementsByTagName('h2')
+            var sec = document.getElementsByTagName('section')
+            var medida = Number.parseFloat(window.prompt('Digite sua distância em metros (m)'))
+            res.innerText = `A distância de ${medida.toFixed(2)} metros, corresponde a...`
+            sec.innerText = document.write(medida / 10)
+        }
+    </script>
+</body>
+
+</html>
