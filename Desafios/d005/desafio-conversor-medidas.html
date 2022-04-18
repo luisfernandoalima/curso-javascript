@@ -11,19 +11,27 @@
 <body>
     <h1>Conversor de Medidas</h1>
     <input type="button" value="Converter" id="btn">
-    <h2></h2>
-    <section></section>
+    <h2 id="sub"></h2>
+    <div id="Km"></div>
+    <div id="Hm"></div>
+    <div id="Dam"></div>
+    <div id="dm"></div>
+    <div id="cm"></div>
+    <div id="mm"></div>
     <script>
         var btn = document.querySelector('#btn')
 
         btn.addEventListener('click', converter)
 
         function converter() {
-            var res = document.getElementsByTagName('h2')
-            var sec = document.getElementsByTagName('section')
             var medida = Number.parseFloat(window.prompt('Digite sua distância em metros (m)'))
-            res.innerText = `A distância de ${medida.toFixed(2)} metros, corresponde a...`
-            sec.innerText = document.write(medida / 10)
+            sub.innerHTML = 'A distância de ' + medida.toFixed(2) + ' metros, corresponde a...'
+            Km.innerHTML = Number(medida / 1000).toFixed(3) + ' quilômetros (Km)'
+            Hm.innerHTML = Number(medida / 100).toFixed(3) + ' hectômetros (Hm)'
+            Dam.innerHTML = Number(medida / 10).toFixed(3) + ' decâmetros (Dam)'
+            dm.innerHTML = Number(medida * 10).toFixed(3) + ' decímetros (dm)'
+            cm.innerHTML = Number(medida * 100).toFixed(3) + ' centímetros (cm)'
+            mm.innerHTML = Number(medida * 1000).toFixed(3) + ' milímetros (mm)'
         }
     </script>
 </body>
