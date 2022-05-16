@@ -18,10 +18,10 @@
     </header>
     <main>
         <div id="tela">
-            <h2 id="NomePokemon">Olá</h2>
+            <h2 id="NomePokemon"></h2>
             <img src="img/P003.gif" alt="" id="PokeGif">
-            <h3 class="type">Tipo</h3>
-            <h4 class="type"><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></h4>
+            <h3 id="typeText">Tipo</h3>
+            <h4 id="type"><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></h4>
             <label for="HP">HP</label>
             <meter id="HP" min="0" max="180" low="50" high="100" optimum="120" value="121"></meter><br>
             <label for="Attack">Attack</label>
@@ -36,31 +36,86 @@
             <meter id="Speed" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
         </div>
         <div id="Pokemons">
-            <div class="Poke Grass DP001">
-                <label for="P001">
-                <img src="img/P001.png" alt="" id="P001Img" class="PokeImg">
-                <h2>001 Bulbasaur</h2>
-                <p><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
-            </label>
-                <input type="radio" name="Pokemon" value="P001" id="P001">
+            <div id="Linha01">
+                <div class="Poke Grass DP001">
+                    <label for="P001">
+                    <img src="img/P001.png" alt="" id="P001Img" class="PokeImg">
+                    <h2 id="NameP001">001 Bulbasaur</h2>
+                    <p id="TypeP001"><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" value="P001" id="P001" onchange="Dex()">
+                </div>
+                <div class="Poke Grass DP002">
+                    <label for="P002">
+                    <img src="img/P002.png" alt="" id="P002Img" class="PokeImg">
+                    <h2 id="NameP002">002 Ivysaur</h2>
+                    <p id="TypeP002"><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" Value="P002" id="P002" onchange="Dex()">
+                </div>
+                <div class="Poke Grass DP003">
+                    <label for="P003">
+                    <img src="img/P003.png" alt="" id="P003Img" class="PokeImg">
+                    <h2 id="NameP003">003 Venousaur</h2>
+                    <p id="TypeP003"><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" value="P003" id="P003" onchange="Dex()">
+                </div>
             </div>
-            <div class="Poke Grass DP002">
-                <label for="P002">
-                <img src="img/P002.png" alt="" id="P002Img" class="PokeImg">
-                <h2>002 Ivysaur</h2>
-                <p><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
-            </label>
-                <input type="radio" name="Pokemon" Value="P002" id="P002">
-            </div>
-            <div class="Poke Grass DP003">
-                <label for="P003">
-                <img src="img/P003.png" alt="" id="P003Img" class="PokeImg">
-                <h2>003 Venousaur</h2>
-                <p><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
-            </label>
-                <input type="radio" name="Pokemon" value="P003" id="P003">
+            <div class="Linhas">
+                <div class="Poke Fire DP001">
+                    <label for="P004">
+                    <img src="img/P004.png" alt="" id="P004Img" class="PokeImg">
+                    <h2 id="NameP004">004 Charmander</h2>
+                    <p id="TypeP004"><span class="firetype">Fire</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" value="P004" id="P004" onchange="Dex()">
+                </div>
+                <div class="Poke Fire DP00">
+                    <label for="P005">
+                    <img src="img/P005.png" alt="" id="P005Img" class="PokeImg">
+                    <h2 id="NameP005">005 Charmelion</h2>
+                    <p id="TypeP005"><span class="firetype">Fire</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" Value="P005" id="P005" onchange="Dex()">
+                </div>
+                <div class="Poke Fire">
+                    <label for="P006">
+                    <img src="img/P006.png" alt="" id="P003Img" class="PokeImg">
+                    <h2 id="NameP006">006 Charizard</h2>
+                    <p id="TypeP006"><span class="firetype">Fire</span> <span class="flyingtype">Flying</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" value="P006" id="P006" onchange="Dex()">
+                </div>
             </div>
 
+
+            <div class="Linhas">
+                <div class="Poke Fire DP001">
+                    <label for="P004">
+                    <img src="img/P004.png" alt="" id="P004Img" class="PokeImg">
+                    <h2 id="NameP004">004 Charmander</h2>
+                    <p id="TypeP004"><span class="firetype">Fire</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" value="P004" id="P004" onchange="Dex()">
+                </div>
+                <div class="Poke Fire DP00">
+                    <label for="P005">
+                    <img src="img/P005.png" alt="" id="P005Img" class="PokeImg">
+                    <h2 id="NameP005">005 Charmelion</h2>
+                    <p id="TypeP005"><span class="firetype">Fire</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" Value="P005" id="P005" onchange="Dex()">
+                </div>
+                <div class="Poke Fire">
+                    <label for="P006">
+                    <img src="img/P006.png" alt="" id="P003Img" class="PokeImg">
+                    <h2 id="NameP006">006 Charizard</h2>
+                    <p id="TypeP006"><span class="firetype">Fire</span> <span class="flyingtype">Flying</span></p>
+                </label>
+                    <input type="radio" name="Pokemon" value="P006" id="P006" onchange="Dex()">
+                </div>
+            </div>
 
         </div>
     </main>

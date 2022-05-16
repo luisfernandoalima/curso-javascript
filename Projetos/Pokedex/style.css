@@ -22,7 +22,7 @@ main {
 }
 
 #tela {
-    position: absolute;
+    position: fixed;
     background-color: rgb(223, 223, 223);
     border: 3px solid black;
     border-radius: 20px;
@@ -42,7 +42,11 @@ main {
     margin: auto;
 }
 
-.type {
+#typeText {
+    text-align: center;
+}
+
+#type {
     text-align: center;
 }
 
@@ -85,6 +89,15 @@ meter {
     margin-left: 550px;
 }
 
+#Linha01 {
+    display: block;
+}
+
+.Linhas {
+    display: block;
+    margin-top: 10px;
+}
+
 .PokeImg {
     display: block;
     height: 200px;
@@ -118,6 +131,10 @@ meter {
     background-color: rgb(0, 179, 60);
 }
 
+.Fire {
+    background-color: rgb(255, 123, 0);
+}
+
 .grasstype {
     color: white;
     background-color: green;
@@ -129,6 +146,22 @@ meter {
 .poisontype {
     color: white;
     background-color: purple;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.firetype {
+    color: white;
+    background-color: orangered;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.flyingtype {
+    color: white;
+    background-color: rgb(117, 117, 255);
     font-weight: bold;
     border-radius: 4px;
     padding: 5px;
