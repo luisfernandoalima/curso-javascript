@@ -22,12 +22,70 @@ main {
 }
 
 #tela {
-    display: inline-block;
-    background-color: gray;
+    position: absolute;
+    background-color: rgb(223, 223, 223);
+    border: 3px solid black;
     border-radius: 20px;
+    margin-left: 20px;
+    height: 530px;
+    width: 490px;
+    display: inline-block;
 }
 
-#P001 {
+#NomePokemon {
+    text-align: center;
+}
+
+#PokeGif {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.type {
+    text-align: center;
+}
+
+#tela>label {
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+meter {
+    width: 300px;
+    height: 25px;
+    border: 1px solid #ccc;
+}
+
+#HP {
+    margin-left: 77px;
+}
+
+#Attack {
+    margin-left: 45px;
+}
+
+#Defense {
+    margin-left: 28px;
+}
+
+#Sp_Attack {
+    margin-left: 17px;
+}
+
+#Sp_Defense {
+    margin-left: 1px;
+}
+
+#Speed {
+    margin-left: 46px;
+}
+
+#Pokemons {
+    margin-left: 550px;
+}
+
+.PokeImg {
     display: block;
     height: 200px;
     margin: auto;
@@ -36,16 +94,24 @@ main {
 .Poke {
     display: inline-block;
     border-radius: 20px;
+    text-align: center;
+    transition: .8s;
 }
 
-.Poke>h2 {
+.Poke:hover {
+    background-color: #fff;
+    border: 3px solid black;
+}
+
+.Poke>label>h2 {
     color: black;
     text-align: center;
     margin-top: -35px;
 }
 
-.Poke>p {
-    text-align: center;
+.Poke>input {
+    position: absolute;
+    visibility: hidden;
 }
 
 .Grass {
@@ -66,4 +132,12 @@ main {
     font-weight: bold;
     border-radius: 4px;
     padding: 5px;
+}
+
+.Marcado {
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
 }

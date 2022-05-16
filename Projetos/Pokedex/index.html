@@ -17,14 +17,51 @@
         <img src="img/pokebola.png.opdownload" alt="Pokebola" id="titball">
     </header>
     <main>
-        <div class="Poke Grass">
-            <img src="img/001.png" alt="" id="P001">
-            <h2>001 Bulbasaur</h2>
-            <p><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
+        <div id="tela">
+            <h2 id="NomePokemon">Olá</h2>
+            <img src="img/P003.gif" alt="" id="PokeGif">
+            <h3 class="type">Tipo</h3>
+            <h4 class="type"><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></h4>
+            <label for="HP">HP</label>
+            <meter id="HP" min="0" max="180" low="50" high="100" optimum="120" value="121"></meter><br>
+            <label for="Attack">Attack</label>
+            <meter id="Attack" min="0" max="180" low="50" high="100" optimum="120" value="79"></meter><br>
+            <label for="Defense">Defense</label>
+            <meter id="Defense" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
+            <label for="Sp_Attack">Sp.Attack</label>
+            <meter id="Sp_Attack" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
+            <label for="Sp_Defense">Sp.Defense</label>
+            <meter id="Sp_Defense" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
+            <label for="Speed">Speed</label>
+            <meter id="Speed" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
         </div>
-        <div class="Poke Grass">
-            <img src="img/001.png" alt="" id="P001">
-            <h2>Bulbasaur</h2>
+        <div id="Pokemons">
+            <div class="Poke Grass DP001">
+                <label for="P001">
+                <img src="img/P001.png" alt="" id="P001Img" class="PokeImg">
+                <h2>001 Bulbasaur</h2>
+                <p><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
+            </label>
+                <input type="radio" name="Pokemon" value="P001" id="P001">
+            </div>
+            <div class="Poke Grass DP002">
+                <label for="P002">
+                <img src="img/P002.png" alt="" id="P002Img" class="PokeImg">
+                <h2>002 Ivysaur</h2>
+                <p><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
+            </label>
+                <input type="radio" name="Pokemon" Value="P002" id="P002">
+            </div>
+            <div class="Poke Grass DP003">
+                <label for="P003">
+                <img src="img/P003.png" alt="" id="P003Img" class="PokeImg">
+                <h2>003 Venousaur</h2>
+                <p><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></p>
+            </label>
+                <input type="radio" name="Pokemon" value="P003" id="P003">
+            </div>
+
+
         </div>
     </main>
 
