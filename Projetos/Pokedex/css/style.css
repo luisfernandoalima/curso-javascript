@@ -40,9 +40,32 @@ main {
     display: inline-block;
 }
 
+#NameArea {
+    width: 100%;
+}
+
+#MenuArea {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
 #NomePokemon {
+    display: block;
     text-align: center;
 }
+
+#MegaButton {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#Megaimg {
+    height: 30px;
+    width: 15px;
+}
+
+.MegaActive {}
 
 #PokeGif {
     height: 200px;
@@ -144,6 +167,10 @@ meter {
     background-color: rgb(255, 123, 0);
 }
 
+.Water {
+    background-color: #67E0F5;
+}
+
 .grasstype {
     color: white;
     background-color: green;
@@ -171,6 +198,14 @@ meter {
 .flyingtype {
     color: white;
     background-color: rgb(117, 117, 255);
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.watertype {
+    color: white;
+    background-color: #5D90FA;
     font-weight: bold;
     border-radius: 4px;
     padding: 5px;
