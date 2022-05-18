@@ -1,8 +1,5 @@
 var LastCard = ''
 
-
-
-
 function Dex() {
     var Card = document.querySelector('input[name="Pokemon"]:checked').value;
     var FirstCard = document.querySelector('.D' + Card)
