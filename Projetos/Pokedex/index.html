@@ -16,6 +16,7 @@
     <header id="menu">
         <h1 id="titulo">Pokedex</h1>
         <img src="img/pokebola.png.opdownload" alt="Pokebola" id="titball">
+        <button onclick="Mega()"></button>
     </header>
     <main>
         <div id="tela">
@@ -26,17 +27,17 @@
             <h3 id="typeText">Tipo</h3>
             <h4 id="type"><span class="grasstype">Grass</span> <span class="poisontype">Poison</span></h4>
             <label for="HP">HP</label>
-            <meter id="HP" min="0" max="180" low="50" high="100" optimum="120" value="121"></meter><br>
+            <meter id="HP" min="0" max="180" low="50" high="101" optimum="120" value="121"></meter><br>
             <label for="Attack">Attack</label>
-            <meter id="Attack" min="0" max="180" low="50" high="100" optimum="120" value="79"></meter><br>
+            <meter id="Attack" min="0" max="180" low="50" high="101" optimum="120" value="79"></meter><br>
             <label for="Defense">Defense</label>
-            <meter id="Defense" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
+            <meter id="Defense" min="0" max="180" low="50" high="101" optimum="120" value="80"></meter><br>
             <label for="Sp_Attack">Sp.Attack</label>
-            <meter id="Sp_Attack" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
+            <meter id="Sp_Attack" min="0" max="180" low="50" high="101" optimum="120" value="80"></meter><br>
             <label for="Sp_Defense">Sp.Defense</label>
-            <meter id="Sp_Defense" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
+            <meter id="Sp_Defense" min="0" max="180" low="50" high="101" optimum="120" value="80"></meter><br>
             <label for="Speed">Speed</label>
-            <meter id="Speed" min="0" max="180" low="50" high="100" optimum="120" value="80"></meter><br>
+            <meter id="Speed" min="0" max="180" low="50" high="101" optimum="120" value="80"></meter><br>
         </div>
         <div id="Pokemons">
             <div id="Linha01">
@@ -94,7 +95,7 @@
 
 
             <div class="Linhas">
-                <div class="Poke Water DP001">
+                <div class="Poke Water DP007">
                     <label for="P007">
                     <img src="img/P007.png" alt="" id="P007Img" class="PokeImg">
                     <h2 id="NameP007">007 Squirtle</h2>
@@ -102,21 +103,21 @@
                 </label>
                     <input type="radio" name="Pokemon" value="P007" id="P007" onchange="Dex()">
                 </div>
-                <div class="Poke Fire DP00">
-                    <label for="P005">
-                    <img src="img/P005.png" alt="" id="P005Img" class="PokeImg">
-                    <h2 id="NameP005">005 Charmelion</h2>
-                    <p id="TypeP005"><span class="firetype">Fire</span></p>
+                <div class="Poke Water DP008">
+                    <label for="P008">
+                    <img src="img/P008.png" alt="" id="P008Img" class="PokeImg">
+                    <h2 id="NameP008">008 Wartotle</h2>
+                    <p id="TypeP008"><span class="watertype">Water</span></p>
                 </label>
-                    <input type="radio" name="Pokemon" Value="P005" id="P005" onchange="Dex()">
+                    <input type="radio" name="Pokemon" Value="P008" id="P008" onchange="Dex()">
                 </div>
-                <div class="Poke Fire">
-                    <label for="P006">
-                    <img src="img/P006.png" alt="" id="P003Img" class="PokeImg">
-                    <h2 id="NameP006">006 Charizard</h2>
-                    <p id="TypeP006"><span class="firetype">Fire</span> <span class="flyingtype">Flying</span></p>
+                <div class="Poke Water DP009">
+                    <label for="P009">
+                    <img src="img/P009.png" alt="" id="P009Img" class="PokeImg">
+                    <h2 id="NameP009">009 Blastoise</h2>
+                    <p id="TypeP009"><span class="watertype">Water</span></p>
                 </label>
-                    <input type="radio" name="Pokemon" value="P006" id="P006" onchange="Dex()">
+                    <input type="radio" name="Pokemon" value="P009" id="P009" onchange="Dex()">
                 </div>
             </div>
 
