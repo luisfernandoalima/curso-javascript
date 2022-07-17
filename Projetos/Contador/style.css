@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 3.5em;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    color: rgb(0, 0, 80);
+    margin-top: 50px;
+}
+
+div {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+input {
+    text-align: center;
+    font-size: 2em;
+    width: 150px;
+}
+
+.btnD,
+.btnR {
+    margin-right: 40px;
+}
+
+.neutro {
+    color: black;
+}
+
+.negativo {
+    color: red;
+}
+
+.positivo {
+    color: green;
+}
